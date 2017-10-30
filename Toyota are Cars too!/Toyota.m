@@ -10,11 +10,21 @@
 
 @implementation Toyota
 
-- (void) drive {
-    self.model = @"Prius";
-    NSLog(@"Model: %@", self.model);
-
+- (instancetype)init
+{
+    self = [super initWithModel:@"Prius"];
+    if (self) {
+        
+    }
+    return self;
 }
+
+
+//- (void) drive {
+//    self.model = @"Prius";
+//    NSLog(@"Model: %@", self.model);
+//
+//}
 
 @end
 

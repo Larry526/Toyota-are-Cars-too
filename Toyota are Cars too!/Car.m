@@ -10,16 +10,26 @@
 
 @implementation Car
 
-- (id) initWithModel: (NSString *)model {
-    
-    _model = model;
+//- (id) initWithModel: (NSString *)model {
+//
+//    _model = model;
+//    return self;
+//
+//
+//}
+
+- (instancetype)initWithModel:(NSString *)model
+{
+    self = [super init];
+    if (self) {
+        _model = model;
+    }
     return self;
-    
-    
 }
 
+
 - (void) drive {
-    NSLog(@"Model: %@", _model);
+    NSLog(@"Model: %@", self.model);
 }
 
 

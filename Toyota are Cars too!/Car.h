@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) NSString *model;
 
-- (id) initWithModel: (NSString *)model;
+- (instancetype) initWithModel: (NSString *)model;
 
 - (void) drive;
 
